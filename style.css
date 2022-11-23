@@ -1,0 +1,129 @@
+body{
+    background-color: white;
+   
+}
+
+nav{
+    width: 100vw;
+    height: 40px;
+    text-align: center;
+}
+
+.nav-div2{
+    margin-left:300px;
+}
+
+ul{
+    color: black;
+    list-style-type: none;  
+    padding: 0;
+}
+
+li{
+    display: inline;
+    margin: 4px;
+    padding-left:20px ;
+    padding-right: 20px;
+}
+
+.li-content{
+    background-color: white;
+    line-height: 30px;
+    height: auto;
+    width: 200px;
+    z-index: 1;
+    position: absolute;
+    top: 35px;
+    display: none;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+    cursor: pointer;
+}
+
+li:hover .li-hovor1{
+    display: block;
+    left: 433px;
+
+}
+
+li:hover .li-hovor2{
+    display: block;
+    left: 610px;
+}
+
+
+
+.li-content a:hover{
+    display: block;
+    text-decoration: none;
+    color: #53cbf0;
+}
+
+.li-content a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.increase-height{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    transition: 2s;
+    font-family: "Sofia", sans-serif;
+}
+
+.increase-height:hover{
+    height: 300px;
+    width: 300px;
+
+}
+
+/* li button{
+
+} */
+
+.circle{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.animation{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: myAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    text-align: center;
+    color: white;
+}
+
+@keyframes myAnimation{
+    0%{
+        background-color: aqua;
+        border-radius: 50%;
+        color: red;
+        
+    }
+    50%{
+       background-color: blue;
+       transform: translateX(100px);
+       border-radius: 0;
+       color: white;
+        
+    }
+    75%{
+       background-color: black;
+       border-radius: 50%;
+       transform: translateY(100px);
+    }
+    100%{
+        background-color: aqua;
+        border-radius: 50%;
+        color: red;
+     }
+}
